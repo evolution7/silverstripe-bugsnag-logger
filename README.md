@@ -7,7 +7,10 @@ Tested to work with both Silverstripe 2.4 and 3.x applications.
 
 ## Installation ##
 
-Currently, the easiest way is to import the repository as a submodule into your project and make sure you run `git submodule update --recursive --init` afterwards.
+Currently, the easiest way is to import the repository as a submodule into your project.
+
+`git submodule add bugsnag-logger https://github.com/evolution7/silverstripe-bugsnag-logger
+git submodule update --recursive --init`
 
 ## Usage ##
 
@@ -26,7 +29,7 @@ Bugsnag allows you to determine which release stage you are currently in, the Bu
 
 ## Contributing ##
 
-* Fork it on [Github](https://github.com/evolution7/bugsnag-logger)
+* Fork it on [Github](https://github.com/evolution7/silverstripe-bugsnag-logger)
 * Make the changes you'd like to see
 * Make a pull request
 * Thanks!
