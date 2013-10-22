@@ -54,7 +54,7 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
     public static function enableWithApiKey($apiKey, ReleaseStageInterface $releaseStage = null)
     {
         $bugsnag = new Bugsnag_Client($apiKey);
-        SS_Log::add_writer(new E7_BugsnagLogger($bugsnag, $releaseStage), SS_Log::ERR);
+        SS_Log::add_writer(new E7_BugsnagLogger($bugsnag, $releaseStage), SS_Log::WARN);
         return $bugsnag;
     }
 
