@@ -9,7 +9,7 @@ Tested to work with both Silverstripe 2.4 and 3.x applications.
 
 Currently, the easiest way is to import the repository as a submodule into your project.
 
-* `git submodule add bugsnag-logger https://github.com/evolution7/silverstripe-bugsnag-logger`
+* `git submodule add https://github.com/evolution7/silverstripe-bugsnag-logger bugsnag-logger`
 * `git submodule update --recursive --init`
 
 ## Usage ##
