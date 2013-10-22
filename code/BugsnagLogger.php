@@ -33,8 +33,8 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
      * @param  Bugsnag_Client $bugsnag
      * @return E7_BugsnagLogger
      */
-    public static function factory(Bugsnag_Client $bugsnag, ReleaseStageInterface $releaseStage = null) {
-        return new E7_BugsnagLogWriter($bugsnag, $releaseStage);
+    public static function factory($bugsnag) {
+        return new E7_BugsnagLogWriter($bugsnag);
     }
 
     /**
