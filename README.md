@@ -24,4 +24,9 @@ Bugsnag allows you to determine which release stage you are currently in, the Bu
 
 `E7_BugsnagLogger::enableWithApiKey(API-KEY-HERE, new CustomReleaseStage());`
 
+## Contributing ##
 
+* Fork it on [Github](https://github.com/evolution7/bugsnag-logger)
+* Make the changes you'd like to see
+* Make a pull request
+* Thanks!

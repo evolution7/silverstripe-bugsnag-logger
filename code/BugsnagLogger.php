@@ -1,4 +1,12 @@
 <?php
+/*
+ * This file is part of the Silverstripe Bugsnag Logger.
+ *
+ * (c) Evolution 7 <http://www.evolution7.com.au>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 require_once 'Zend/Log/Writer/Abstract.php';
 require_once __DIR__ . '/../vendor/bugsnag-php/src/Bugsnag/Autoload.php';
 
