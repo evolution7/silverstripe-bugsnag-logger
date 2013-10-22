@@ -2,6 +2,9 @@
 
 The Silverstripe Bugsnag Logger sends your error notifications to [Bugsnag](http://bugsnag.com).
 
+## Compatibility ##
+Tested to work with both Silverstripe 2.4 and 3.x applications.
+
 ## Installation ##
 
 Currently, the easiest way is to import the repository as a submodule into your project and make sure you run `git submodule update --recursive --init` afterwards.
