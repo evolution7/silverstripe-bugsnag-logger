@@ -7,7 +7,34 @@ Tested to work with both Silverstripe 2.4 and 3.x applications.
 
 ## Installation ##
 
-Currently, the easiest way is to import the repository as a submodule into your project.
+The recommended way is using [Composer](http://getcomposer.org/). 
+
+Add this repository to your project's `composer.json` file
+
+```json
+"repositories": [
+{
+	"type": "vcs",
+	"url": "https://github.com/evolution7/silverstripe-bugsnag-logger"
+}
+],
+"require": {
+	"evolution7/bugsnag-logger": "dev-master"
+}
+```
+
+If there isn't a `composer.lock` file already, you can simply run
+```shell
+$ composer install
+```
+Otherwise, to install this library only, run the following command to avoid updating other dependencies
+```shell
+$ composer update evolution7/bugsnag-logger
+```
+
+The required [bugsnag-php](https://github.com/bugsnag/bugsnag-php) library should also be installed into `vendor/bugsnag/bugsnag/` under your project root directory. You should verify if the bugsnag autoloader has been correctly included by looking at `bugsnag-logger/code/BugsnagLogger.php`.
+
+Alternatively, you can import the repository as a submodule into your project if you choose not to use composer.
 
 * `git submodule add https://github.com/evolution7/silverstripe-bugsnag-logger bugsnag-logger`
 * `git submodule update --recursive --init`
