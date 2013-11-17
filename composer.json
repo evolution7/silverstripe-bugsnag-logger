@@ -5,6 +5,13 @@
     "keywords": ["silverstripe", "bugsnag", "exceptions", "errors", "logging", "tracking"],
     "homepage": "https://github.com/evolution7/silverstripe-bugsnag-logger",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Evolution 7",
+            "homepage": "http://www.evolution7.com.au/",
+            "email": "connect@evolution7.com.au"
+        }
+    ],
     "require": {
         "php": ">=5.3.2",
         "bugsnag/bugsnag": "2.*",
