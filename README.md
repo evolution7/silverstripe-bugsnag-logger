@@ -13,14 +13,17 @@ Add both this repository and the original bugsnag project to your project's `com
 
 ```json
 "require": {
-    "evolution7/silverstripe-bugsnag-logger": "1.*",
-    "bugsnag/bugsnag": "2.*"
+    "evolution7/silverstripe-bugsnag-logger": "1.*"
 }
 ```
 
 After this simply run
 ```shell
 $ composer install
+```
+or
+```shell
+$ composer update evolution7/silverstripe-bugsnag-logger
 ```
 
 ### As a submodule ###
