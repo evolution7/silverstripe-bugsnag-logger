@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 require_once 'Zend/Log/Writer/Abstract.php';
-require_once __DIR__ . '/../vendor/bugsnag-php/src/Bugsnag/Autoload.php';
+require_once __DIR__ . '/../../vendor/bugsnag/bugsnag/src/Bugsnag/Autoload.php';
 
 /**
  * Sends an error message to Bugsnag.

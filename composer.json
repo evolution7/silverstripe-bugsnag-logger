@@ -1,0 +1,14 @@
+{
+    "name": "evolution7/bugsnag-logger",
+    "type": "silverstripe-module",
+    "description": "Bugsnag error reporting integration for Silverstripe",
+    "keywords": ["silverstripe", "bugsnag", "exceptions", "errors", "logging", "tracking"],
+    "homepage": "https://github.com/evolution7/silverstripe-bugsnag-logger",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.2",
+        "bugsnag/bugsnag": "2.*",
+        "silverstripe/cms": ">=2.4"
+    },
+    "target-dir": "bugsnag-logger"
+}
