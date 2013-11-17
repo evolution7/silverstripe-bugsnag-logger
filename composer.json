@@ -1,5 +1,5 @@
 {
-    "name": "evolution7/bugsnag-logger",
+    "name": "evolution7/silverstripe-bugsnag-logger",
     "type": "silverstripe-module",
     "description": "Bugsnag error reporting integration for Silverstripe",
     "keywords": ["silverstripe", "bugsnag", "exceptions", "errors", "logging", "tracking"],
