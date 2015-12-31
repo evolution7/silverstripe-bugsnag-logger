@@ -17,7 +17,8 @@ require_once __DIR__ . '/../../vendor/bugsnag/bugsnag/src/Bugsnag/Autoload.php';
  *
  * @package bugsnag-logger
  */
-class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
+class E7_BugsnagLogger extends Zend_Log_Writer_Abstract
+{
 
     private $bugsnag;
 
@@ -26,7 +27,8 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
      *
      * @param Bugsnag_Client $bugsnag
      */
-    public function __construct(Bugsnag_Client $bugsnag, ReleaseStageInterface $releaseStage = null) {
+    public function __construct(Bugsnag_Client $bugsnag, ReleaseStageInterface $releaseStage = null)
+    {
         $this->bugsnag = $bugsnag;
         if (!$releaseStage) {
             $releaseStage = new ReleaseStage();
@@ -41,7 +43,8 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
      * @param  Bugsnag_Client $bugsnag
      * @return E7_BugsnagLogger
      */
-    public static function factory($bugsnag) {
+    public static function factory($bugsnag)
+    {
         return new E7_BugsnagLogWriter($bugsnag);
     }
 
@@ -64,7 +67,8 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
      * As Silverstripe internally converts all Exceptions to regular PHP errors
      * we will only report PHP errors
      */
-    public function _write($event) {
+    public function _write($event)
+    {
         // We only want to log real errors which will come as an array
         if (!is_array($event)) {
             return;
@@ -72,5 +76,4 @@ class E7_BugsnagLogger extends Zend_Log_Writer_Abstract {
         $event = $event['message'];
         $this->bugsnag->errorHandler($event['errno'], $event['errstr'], $event['errfile'], $event['errline'], $event['errcontext']);
     }
-
 }
